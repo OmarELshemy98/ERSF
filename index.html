@@ -256,75 +256,73 @@
     </section>
 
    <!-- Membership Section -->
-   <section class="py-16 relative mt-20 text-[#2F4E42]">
-    <div class="container px-4 max-w-7xl">
-        <!-- Credit Card Image -->
-        <div class="absolute -top-32 left-1/2 transform -translate-x-1/2">
-            <img src="images/credit-card-removebg-preview.png" alt="Credit-card-photo" 
-                class="w-[500px] transform rotate-[-15deg] z-50 relative">
-        </div>
-
-        <div class="space-y-4 mt-32 mx-12 text-[#2F4E42]">
-            <h2 class="text-3xl mb-6">Membership</h2>
-            <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-5 bg-[#FF00FF]"></div>
-                <h3 class="text-xl font-medium ">Individual Subscription</h3>
-            </div>
-            <p class=" text-xl max-w-3xl mb-12">
-                Explanation of the benefits members receive (e.g., access to competitions, courses, workshops).
-            </p>
-            
-        </div>
-        <div class="flex justify-center mt-8">
-            <button class="bg-[#0A2641] text-white px-24 py-3 text-lg font-medium hover:bg-[#0A2641] transition-colors">
-                JOIN NOW
-            </button>
-        </div>
-    </div>
-</section>
-
+   <section class="py-8 md:py-16 relative mt-10 md:mt-20 text-[#2F4E42] px-4">
+       <div class="container mx-auto px-4 max-w-7xl">
+           <!-- Credit Card Image -->
+           <div class="absolute -top-16 md:-top-32 left-1/2 transform -translate-x-1/2">
+               <img src="images/credit-card-removebg-preview.png" alt="Credit-card-photo" 
+                   class="w-[300px] md:w-[500px] transform rotate-[-15deg] z-50 relative">
+           </div>
+   
+           <div class="space-y-4 mt-20 md:mt-32 mx-4 md:mx-12 text-[#2F4E42]">
+               <h2 class="text-2xl md:text-3xl mb-4 md:mb-6">Membership</h2>
+               <div class="flex items-center gap-2 mb-4">
+                   <div class="w-6 md:w-8 h-4 md:h-5 bg-[#FF00FF]"></div>
+                   <h3 class="text-lg md:text-xl font-medium">Individual Subscription</h3>
+               </div>
+               <p class="text-base md:text-xl max-w-3xl mb-8 md:mb-12">
+                   Explanation of the benefits members receive (e.g., access to competitions, courses, workshops).
+               </p>
+           </div>
+           <div class="flex justify-center mt-6 md:mt-8">
+               <button class="bg-[#0A2641] text-white px-12 md:px-24 py-2 md:py-3 text-base md:text-lg font-medium hover:bg-[#0A2641] transition-colors">
+                   JOIN NOW
+               </button>
+           </div>
+       </div>
+   </section>
+   
     <!-- Media Section -->
-    <h2 class="text-3xl  text-[#2F4E42] my-12 mx-12">Media</h2>
-
-    <section class="bg-[#0A2641] text-center">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 lg:px-16">
-            <!-- Image Block with Overlay Effect -->
-            <div class="relative group overflow-hidden">
+    <h2 class="text-xl md:text-3xl text-[#2F4E42] my-6 md:my-12 mx-4 md:mx-12">Media</h2>
+   
+    <section class="bg-[#0A2641] text-center py-6 md:py-12">
+        <div class="grid grid-cols-2 gap-4 px-4 md:px-6 lg:px-16">
+            <!-- Image Block -->
+            <div class="relative group overflow-hidden h-40 md:h-64">
                 <!-- Background Image -->
                 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 transform group-hover:scale-110"
                     style="background-image: url('images/media-left.png');">
-                    <div class="absolute inset-4 bg-transparent border-4 border-[#0B2743] opacity-70 z-10"></div>
+                    <div class="absolute inset-2 md:inset-4 bg-transparent border-2 md:border-4 border-[#0B2743] opacity-70 z-10"></div>
                 </div>
-
-
-
-                <!-- Button -->
-                <div class="relative flex items-center justify-center h-64  flex-col space-y-12">
-                    <button><a href="#" class=" px-4 py-2 z-10"><i class="fa-solid fa-plus fa-2x"
-                                style="color: #d9d9d9;"></i></a></button>
-                    <button><a href="#" class="bg-white text-[#031F22] px-8 py-3 font-bold z-10">See Images</a></button>
-                </div>
-            </div>
-
-            <!-- Video Block with Overlay Effect -->
-            <div class="relative group overflow-hidden">
-                <!-- Background Image -->
-                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 transform group-hover:scale-110"
-                    style="background-image: url('images/media-rigth.png');">
-                    <div class="absolute inset-4 bg-transparent border-4 border-[#0B2743] opacity-70 z-10"></div>
-                </div>
-
-
-                <!-- Button -->
-                <div class="relative flex items-center justify-center h-64  flex-col space-y-12">
-                    <button><a href="#" class=" px-4 py-2 z-10"><i class="fa-solid fa-plus fa-2x"
-                                style="color: #d9d9d9;"></i></a></button>
-                    <button><a href="#" class="bg-white text-[#031F22] px-8 py-3 font-bold z-10">See Videos</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
+   
+   
+   <!-- Button -->
+   <div class="relative flex items-center justify-center h-full flex-col space-y-4 md:space-y-12">
+       <button><a href="#" class="px-2 py-1 md:px-4 md:py-2 z-10">
+           <i class="fa-solid fa-plus text-base md:text-2x" style="color: #d9d9d9;"></i>
+       </a></button>
+       <button><a href="#" class="bg-white text-[#031F22] px-3 md:px-8 py-1 md:py-3 text-xs md:text-base font-bold z-10">See Images</a></button>
+   </div>
+   </div>
+   
+   <!-- Video Block -->
+   <div class="relative group overflow-hidden h-40 md:h-64">
+       <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 transform group-hover:scale-110"
+           style="background-image: url('images/media-rigth.png');">
+           <div class="absolute inset-2 md:inset-4 bg-transparent border-2 md:border-4 border-[#0B2743] opacity-70 z-10"></div>
+       </div>
+   
+   
+   <!-- Button -->
+   <div class="relative flex items-center justify-center h-full flex-col space-y-4 md:space-y-12">
+       <button><a href="#" class="px-2 py-1 md:px-4 md:py-2 z-10">
+           <i class="fa-solid fa-plus text-base md:text-2x" style="color: #d9d9d9;"></i>
+       </a></button>
+       <button><a href="#" class="bg-white text-[#031F22] px-4 md:px-8 py-1 md:py-3 text-xs md:text-base font-bold z-10">See Videos</a></button>
+   </div>
+   </div>
+   </div>
+</section>
     <!-- Footer Section -->
     <footer class="bg-[#205392] text-white py-6 px-4 md:px-8 lg:px-20">
         <div class="container mx-auto px-2 md:px-4">
