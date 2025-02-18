@@ -255,16 +255,33 @@
         </div>
     </section>
 
-    <!-- Membership Section -->
-    <section class="membership" id="subscription">
-        <h2>Membership</h2>
-        <div class="membership-content">
-            <img src="credit-card.png" alt="Educational Account">
-            <h3>Individual Subscription</h3>
-            <p>Explanation of the benefits members receive (e.g., access to competitions, courses, workshops)</p>
-            <button class="join-now">JOIN NOW</button>
+   <!-- Membership Section -->
+   <section class="py-16 relative mt-20 text-[#2F4E42]">
+    <div class="container px-4 max-w-7xl">
+        <!-- Credit Card Image -->
+        <div class="absolute -top-32 left-1/2 transform -translate-x-1/2">
+            <img src="images/credit-card-removebg-preview.png" alt="Credit-card-photo" 
+                class="w-[500px] transform rotate-[-15deg] z-50 relative">
         </div>
-    </section>
+
+        <div class="space-y-4 mt-32 mx-12 text-[#2F4E42]">
+            <h2 class="text-3xl mb-6">Membership</h2>
+            <div class="flex items-center gap-2 mb-4">
+                <div class="w-8 h-5 bg-[#FF00FF]"></div>
+                <h3 class="text-xl font-medium ">Individual Subscription</h3>
+            </div>
+            <p class=" text-xl max-w-3xl mb-12">
+                Explanation of the benefits members receive (e.g., access to competitions, courses, workshops).
+            </p>
+            
+        </div>
+        <div class="flex justify-center mt-8">
+            <button class="bg-[#0A2641] text-white px-24 py-3 text-lg font-medium hover:bg-[#0A2641] transition-colors">
+                JOIN NOW
+            </button>
+        </div>
+    </div>
+</section>
 
     <!-- Media Section -->
     <h2 class="text-3xl  text-[#2F4E42] my-12 mx-12">Media</h2>
@@ -308,68 +325,63 @@
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer>
-        <!-- Top white line -->
-        <div class="footer-line"></div>
+    <!-- Footer Section -->
+    <footer class="bg-[#205392] text-white py-12">
+        
+        <div class="container mx-auto px-4">
+             <!-- White Line Divider -->
+             <div class="w-full h-[4px] bg-white my-8"></div>
 
-        <!-- Footer content -->
-        <div class="footer-content">
-            <!-- Column 1 -->
-            <div class="footer-column">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About the Union</a></li>
-                    <li><a href="#">Activities</a></li>
-                    <li><a href="#">Competitions</a></li>
-                    <li><a href="#">Subscription</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="footer-column-2">
-                <ul class="gap-15">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Rules & Regulations</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3 - Contact Form -->
-            <div class="footer-column">
-                <p>Send To Us:</p>
-                <div class="contact-form">
-                    <input type="text" class="py-2" placeholder="Enter Subject">
-                    <input type="text" class="py-5" input-message" placeholder="Enter Message">
-                    <button type="submit">Send</button>
+            <div class="grid grid-cols-4 gap-8">
+                <!-- Navigation Links - Column 1 -->
+                <div class="space-y-4">
+                    <a href="#" class="block hover:text-gray-300">Home</a>
+                    <a href="#" class="block hover:text-gray-300">About the Union</a>
+                    <a href="#" class="block hover:text-gray-300">Activities</a>
+                    <a href="#" class="block hover:text-gray-300">Competitions</a>
+                    <a href="#" class="block hover:text-gray-300">Subscription</a>
                 </div>
-            </div>
 
-            <!-- Column 4 - Social Media -->
-            <div class="social-media-section">
-                <h3 class="social-title">Our Social Media</h3>
-                <div class="social-content flex items-center justify-between my-2">
-                    <div class="social-icons">
-                        <a href="#" class="social-box">
-                            <i class="fab fa-facebook-f fa-2x"></i>
+                <!-- Navigation Links - Column 2 -->
+                <div class="space-y-4">
+                    <a href="#" class="block hover:text-gray-300">News</a>
+                    <a href="#" class="block hover:text-gray-300">Rules & Regulations</a>
+                    <a href="#" class="block hover:text-gray-300">Terms & Conditions</a>
+                    <a href="#" class="block hover:text-gray-300">Privacy Policy</a>
+                    <a href="#" class="block hover:text-gray-300">Contact Us</a>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-span-1">
+                    <h3 class="font-semibold mb-4">Send To Us:</h3>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Enter Subject" class="w-full p-2 bg-white/10 rounded">
+                        <input type="email" placeholder="Enter Message" class="w-full py-8 bg-white/10 rounded">
+                        <button class="w-full bg-blue-600 p-2 rounded hover:bg-blue-700">Send</button>
+                    </form>
+                </div>
+
+                <!-- Social Media & Copyright -->
+                <div class="col-span-1">
+                    <h3 class="font-semibold mb-4">Our Social Media</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="w-10 h-10 bg-white flex items-center justify-center">
+                            <i class="fab fa-facebook-f fa-xl text-[#205392]"></i>
                         </a>
-                        <a href="#" class="social-box">
-                            <i class="fab fa-youtube fa-2x"></i>
+                        <a href="#" class="w-10 h-10 bg-white flex items-center justify-center">
+                            <i class="fab fa-youtube fa-xl text-[#205392]"></i>
                         </a>
-                        <a href="#" class="social-box-whatsapp">
-                            <i class="fab fa-whatsapp fa-2x"></i>
+                        <a href="#" class="w-10  h-10 bg-white flex items-center justify-center">
+                            <i class="fab fa-whatsapp fa-2x text-[#205392]"></i>
                         </a>
-                        <div class="social-button">
-                            <button class="join-team-btn px-10 py-1 text-nowrap">Join our Team</button>
-                        </div>
+                    </div>
+                    <!-- Copyright moved here -->
+                    <div class="text-sm text-gray-300">
+                      <p > Copyright© 2023. Egyptian Robotics & RC Sports Federation. All Rights Reserved  </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright my-8 flex justify-end">
-            Copyright© 2025 Egyptian robotics & RC Sports Federation. All rights Reserved
-        </div>
     </footer>
+ 
     <script src="script.js"></script>
