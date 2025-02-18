@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-800 min-h-screen py-8 px-4 relative overflow-hidden">
+        <!-- Top Navigation Bar -->
+        <div class="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
+            <div class="container mx-auto flex justify-end items-center py-2 px-6 space-x-6 text-sm">
+                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors">Login</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors">Register</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors">العربية</a>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="fixed top-[32px] left-0 right-0 bg-[#205392] z-50 py-4">
+            <div class="container mx-auto flex items-center justify-between px-4">
+                <!-- Left Navigation -->
+                <div class="flex items-center space-x-12 text-white">
+                    <a href="#" class="relative group">
+                        <span class="block py-2 border-b-2 border-green-400">Home</span>
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-400 transform scale-x-100 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
+                    <a href="#" class="relative group">
+                        <span class="block py-2">About the Union</span>
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-400 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
+                    <a href="#" class="relative group">
+                        <span class="block py-2">Activities</span>
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-400 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
+                </div>
+                
+                <!-- Center Space for Logo -->
+                <div class="w-20"></div>
+                
+                <!-- Right Navigation -->
+                <div class="flex items-center space-x-12 text-white">
+                    <a href="#" class="relative group">
+                        <span class="block py-2">Competitions</span>
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-400 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
+                    <a href="#" class="relative group">
+                        <span class="block py-2">Subscription</span>
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-400 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
+                    <a href="#" class="relative group">
+                        <span class="block py-2">News</span>
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-400 transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Logo Container -->
+        <div class="fixed top-0 left-1/2 transform -translate-x-1/2 z-[51] w-28">
+            <div class="bg-white rounded-b-[50px] pt-1 px-3 pb-3"> 
+                <img src="logo-removebg-preview.png" alt="Logo" class="w-full h-full object-contain">
+            </div>
+        </div>
+        
+        <!-- Adjust top padding to account for both navbars -->
+        <div class="pt-32">
+            <!-- Rest of your content remains the same -->
+    
+        <!-- Main Content -->
+        <div class="container mx-auto grid grid-cols-2 gap-12 items-center relative z-10 mt-8">
+            <!-- Left Content -->
+            <div class="text-white space-y-8">
+                <h1 class="text-7xl font-bold leading-tight">
+                    Empowering <br/>
+                    Future Tech <br/>
+                    Leaders
+                </h1>
+                <p class="text-gray-300 text-lg max-w-lg">
+                    Empowering the future with AI and robotics education innovative learning for the next generation of creators and thinkers
+                </p>
+                <div class="relative inline-block">
+                    <!-- Shadow effect -->
+                    <div class="absolute -inset-1 bg-[#FFE81E]/30 rounded-md blur-md"></div>
+                    <!-- Button -->
+                    <button class="relative bg-[#FFE81E] text-black px-8 py-2.5 rounded-md font-bold text-base hover:bg-[#FFE81E]/90 transition-all duration-300">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Right Content - Robot Illustration -->
+            <div class="relative">
+                <div class="absolute -inset-4 bg-[#4B9CE2]/20 rounded-3xl blur-2xl"></div>
+                <img src="header-photo.png" alt="Robot" class="w-full h-auto relative z-10 hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    
+        <!-- Bottom Text -->
+        <div class="container mx-auto mt-32 relative z-10 flex justify-center">
+            <div class="bg-gradient-to-r from-[#205392] to-[#712B8F] backdrop-blur-lg rounded-xl p-8 max-w-5xl w-full mx-8">
+                <p class="text-white/90 text-lg leading-relaxed">
+                    In a time when the world is witnessing rapid developments in technology and an accelerating digital transformation, it has become essential to spread awareness of this technology and increase its significance across various sectors. Additionally, it is crucial to connect young people with these modern technologies.
+                </p>
+                <div class="flex justify-end mt-6">
+                    <button class="bg-white text-[#205392] px-7 py-2 rounded text-base hover:bg-white/90 transition-all duration-300 flex items-center gap-2">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
