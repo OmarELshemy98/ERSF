@@ -35,4 +35,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function showPopup() {                  
+    document.getElementById('mediaPopup').style.display = 'flex';
+}
 
+function closePopup() {
+    const popup = document.getElementById('mediaPopup');
+    if (popup) {
+        popup.style.display = 'none';
+    }
+}
+
+// Remove the duplicate event listener setup
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementById('closeBtn');
+    if (closeBtn) {
+        closeBtn.onclick = closePopup;
+    }
+});
+// Add these functions after your existing popup functions
+function showRulesPopup() {
+    document.getElementById('rulesPopup').style.display = 'flex';
+}
+
+function closeRulesPopup() {
+    document.getElementById('rulesPopup').style.display = 'none';
+}
+
+//newsPopup
+function showNewsPopup() {
+    document.getElementById('NewsPopup').style.display = 'flex';
+}
+
+function closeNewsPopup() {
+    document.getElementById('NewsPopup').style.display = 'none';
+}

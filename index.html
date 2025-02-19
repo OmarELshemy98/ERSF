@@ -333,24 +333,20 @@
                     <!-- Add this right after the opening <body> tag -->
                     <!-- Move the popup div to be a direct child of body -->
                     <!-- Update the popup div -->
-                    <div id="mediaPopup"
-                        class="fixed inset-0 min-h-screen bg-[#205392] bg-opacity-95 z-[9999] hidden flex-col items-start p-4 font-inter">
+                    <div id="mediaPopup" class="fixed inset-0 min-h-screen bg-[#205392] bg-opacity-95 z-[9999] hidden flex-col items-start p-4 font-inter">
                         <div class="w-full flex flex-start justify-between mt-8">
                             <h2 class="text-white text-2xl font-black ml-8 font-inter">Media</h2>
-                            <button onclick="closePopup();"
-                                class=" text-white text-5xl mr-8 font-bold z-10">&times;</button>
+                            <button onclick="closePopup();" class=" text-white text-5xl mr-8 font-bold z-10">&times;</button>
                         </div>
                         <div class="w-full flex-1 flex flex-col items-center justify-center -mt-16">
                             <p class="text-white/90 text-center font-black  pb-3">Coming Soon !</p>
                             <p class="text-white/90  font-light">It will come soon at next event</p>
                         </div>
                     </div>
-                    <button onclick="showPopup();"
-                        class="bg-white text-[#031F22] px-3 md:px-8 py-1 md:py-3 text-xs md:text-base font-bold z-10">See
-                        Images</button>
+                    <button onclick="showPopup();" class="bg-white text-[#031F22] px-3 md:px-8 py-1 md:py-3 text-xs md:text-base font-bold z-10">See Images</button>
                     <!-- For the Videos button -->
-
-
+                    
+                   
                 </div>
             </div>
 
@@ -369,102 +365,73 @@
                     <button><a href="#" class="px-2 py-1 md:px-4 md:py-2 z-10">
                             <i class="fa-solid fa-plus text-base md:text-2x" style="color: #d9d9d9;"></i>
                         </a></button>
-                    <button><a href="#" <button><a href="#" onclick="showPopup(); return false;"
-                                class="bg-white text-[#031F22] px-4 md:px-8 py-1 md:py-3 text-xs md:text-base font-bold z-10">See
-                                Videos</a></button>
-                    <!-- Add this before closing </body> tag, after your existing scripts -->
+                    <button><a href="#"
+                        <button><a href="#" onclick="showPopup(); return false;" class="bg-white text-[#031F22] px-4 md:px-8 py-1 md:py-3 text-xs md:text-base font-bold z-10">See Videos</a></button>
+                        <!-- Add this before closing </body> tag, after your existing scripts -->
                 </div>
             </div>
         </div>
     </section>
     <!-- Footer Section -->
-    <!-- Add this div right after your mediaPopup div -->
-    <div id="rulesPopup"
-        class="fixed inset-0 min-h-screen bg-[#205392] bg-opacity-95 z-[9999] hidden flex-col items-start p-4 font-inter">
-        <div class="w-full flex flex-start justify-between mt-8">
-            <h2 class="text-white text-2xl font-black ml-8 font-inter">Rules & Regulations</h2>
-            <button onclick="closeRulesPopup();" class="text-white text-5xl mr-8 font-bold z-10">&times;</button>
+                   <!-- Add this div right after your mediaPopup div -->
+<div id="rulesPopup" class="fixed inset-0 min-h-screen bg-[#205392] bg-opacity-95 z-[9999] hidden flex-col items-start p-4 font-inter">
+    <div class="w-full flex flex-start justify-between mt-8">
+        <h2 class="text-white text-2xl font-black ml-8 font-inter">Rules & Regulations</h2>
+        <button onclick="closeRulesPopup();" class="text-white text-5xl mr-8 font-bold z-10">&times;</button>
+    </div>
+    <div class="w-full flex-1 flex flex-col items-center justify-center px-8 overflow-y-auto">
+        <div class="max-w-4xl w-full h-full text-white space-y-6 content">
+            <p class="text-white/90">• Adherence to the Federation's articles of association, internal regulations, and the decisions of the General Assembly and Board of Directors, and compliance with their implementation.</p>
+            <p class="text-white/90">• Payment of annual fees within the specified time, according to the rules and conditions in the regulations.</p>
+            <p class="text-white/90">• Striving to achieve the Federation's objectives and refraining from actions or practices that may negatively impact its identity or damage its reputation.</p>
+            <p class="text-white/90">• Respect for principles, values, traditions, and the spirit of fair competition.</p>
+            <p class="text-white/90">• Compliance with all duties arising from applying the Federation's terms and conditions.</p>
+            <p class="text-white/90">• Observance of public decency while in the Federation.</p>
+            <p class="text-white/90">• Proactively updating membership information when any changes occur.</p>
+            <p class="text-white/90">• Active participation in Federation's activities, events, and programs.</p>
+            <p class="text-white/90">• Compliance with the licensed venues for Federation activities, subject to the terms and conditions issued by the Federation, with violators held accountable and penalties applied as per the regulations.</p>
+            <p class="text-white/90">• Providing opportunities for all individuals to participate in the Federation's championships and competitions, according to the approved regulations and rules. Specific procedures must be followed when participating in external championships without Federation approval, with the individual assuming the consequences.</p>
+            <p class="text-white/90">• Responsibility for maintaining and operating the equipment used, and for any physical or material damage resulting, whether during official competitions, activities, events, festivals, or other events inside or outside Egypt.</p>
+            <p class="text-white/90">• Responsibility for any violation of membership terms or misuse.</p>
         </div>
-        <div class="w-full flex-1 flex flex-col items-center justify-center px-8 overflow-y-auto">
-            <div class="max-w-4xl w-full h-full text-white space-y-6 content">
-                <p class="text-white/90">• Adherence to the Federation's articles of association, internal regulations,
-                    and the decisions of the General Assembly and Board of Directors, and compliance with their
-                    implementation.</p>
-                <p class="text-white/90">• Payment of annual fees within the specified time, according to the rules and
-                    conditions in the regulations.</p>
-                <p class="text-white/90">• Striving to achieve the Federation's objectives and refraining from actions
-                    or practices that may negatively impact its identity or damage its reputation.</p>
-                <p class="text-white/90">• Respect for principles, values, traditions, and the spirit of fair
-                    competition.</p>
-                <p class="text-white/90">• Compliance with all duties arising from applying the Federation's terms and
-                    conditions.</p>
-                <p class="text-white/90">• Observance of public decency while in the Federation.</p>
-                <p class="text-white/90">• Proactively updating membership information when any changes occur.</p>
-                <p class="text-white/90">• Active participation in Federation's activities, events, and programs.</p>
-                <p class="text-white/90">• Compliance with the licensed venues for Federation activities, subject to the
-                    terms and conditions issued by the Federation, with violators held accountable and penalties applied
-                    as per the regulations.</p>
-                <p class="text-white/90">• Providing opportunities for all individuals to participate in the
-                    Federation's championships and competitions, according to the approved regulations and rules.
-                    Specific procedures must be followed when participating in external championships without Federation
-                    approval, with the individual assuming the consequences.</p>
-                <p class="text-white/90">• Responsibility for maintaining and operating the equipment used, and for any
-                    physical or material damage resulting, whether during official competitions, activities, events,
-                    festivals, or other events inside or outside Egypt.</p>
-                <p class="text-white/90">• Responsibility for any violation of membership terms or misuse.</p>
+    </div>
+</div>
+
+<!-- Update only the Rules & Regulations link in the footer -->
+
+<div id="NewsPopup" class="fixed inset-0 min-h-screen bg-[#205392] bg-opacity-95 z-[9999] hidden flex-col items-start p-4 font-inter">
+    <div class="w-full flex flex-start justify-between mt-8">
+        <h2 class="text-white text-2xl font-black ml-8 font-inter">News</h2>
+        <button onclick="closeNewsPopup();" class="text-white text-5xl mr-8 font-bold z-10">&times;</button>
+    </div>
+    <div class="w-full flex-1 flex flex-col items-center justify-center px-8 overflow-y-auto">
+        <div class="max-w-4xl w-full h-full text-white space-y-6 content">
+            <p class="text-white/90">• Adherence to the Federation's articles of association, internal regulations, and the decisions of the General Assembly and Board of Directors, and compliance with their implementation.</p>
+            <p class="text-white/90">• Payment of annual fees within the specified time, according to the rules and conditions in the regulations.</p>
+            <p class="text-white/90">• Striving to achieve the Federation's objectives and refraining from actions or practices that may negatively impact its identity or damage its reputation.</p>
+            <p class="text-white/90">• Respect for principles, values, traditions, and the spirit of fair competition.</p>
+            <p class="text-white/90">• Compliance with all duties arising from applying the Federation's terms and conditions.</p>
+            <p class="text-white/90">• Observance of public decency while in the Federation.</p>
+            <p class="text-white/90">• Proactively updating membership information when any changes occur.</p>
+            <p class="text-white/90">• Active participation in Federation's activities, events, and programs.</p>
+            <p class="text-white/90">• Compliance with the licensed venues for Federation activities, subject to the terms and conditions issued by the Federation, with violators held accountable and penalties applied as per the regulations.</p>
+            <p class="text-white/90">• Providing opportunities for all individuals to participate in the Federation's championships and competitions, according to the approved regulations and rules. Specific procedures must be followed when participating in external championships without Federation approval, with the individual assuming the consequences.</p>
+            <p class="text-white/90">• Responsibility for maintaining and operating the equipment used, and for any physical or material damage resulting, whether during official competitions, activities, events, festivals, or other events inside or outside Egypt.</p>
+            <p class="text-white/90">• Responsibility for any violation of membership terms or misuse.</p>
+        </div>
+    </div>
+</div>
+
+                    <!-- For the Videos button -->
+                    
+                   
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Update only the Rules & Regulations link in the footer -->
-
-    <div id="NewsPopup"
-        class="fixed inset-0 min-h-screen bg-[#205392] bg-opacity-95 z-[9999] hidden flex-col items-start p-4 font-inter">
-        <div class="w-full flex flex-start justify-between mt-8">
-            <h2 class="text-white text-2xl font-black ml-8 font-inter">News</h2>
-            <button onclick="closeNewsPopup();" class="text-white text-5xl mr-8 font-bold z-10">&times;</button>
-        </div>
-        <div class="w-full flex-1 flex flex-col items-center justify-center px-8 overflow-y-auto">
-            <div class="max-w-4xl w-full h-full text-white space-y-6 content">
-                <p class="text-white/90">• Adherence to the Federation's articles of association, internal regulations,
-                    and the decisions of the General Assembly and Board of Directors, and compliance with their
-                    implementation.</p>
-                <p class="text-white/90">• Payment of annual fees within the specified time, according to the rules and
-                    conditions in the regulations.</p>
-                <p class="text-white/90">• Striving to achieve the Federation's objectives and refraining from actions
-                    or practices that may negatively impact its identity or damage its reputation.</p>
-                <p class="text-white/90">• Respect for principles, values, traditions, and the spirit of fair
-                    competition.</p>
-                <p class="text-white/90">• Compliance with all duties arising from applying the Federation's terms and
-                    conditions.</p>
-                <p class="text-white/90">• Observance of public decency while in the Federation.</p>
-                <p class="text-white/90">• Proactively updating membership information when any changes occur.</p>
-                <p class="text-white/90">• Active participation in Federation's activities, events, and programs.</p>
-                <p class="text-white/90">• Compliance with the licensed venues for Federation activities, subject to the
-                    terms and conditions issued by the Federation, with violators held accountable and penalties applied
-                    as per the regulations.</p>
-                <p class="text-white/90">• Providing opportunities for all individuals to participate in the
-                    Federation's championships and competitions, according to the approved regulations and rules.
-                    Specific procedures must be followed when participating in external championships without Federation
-                    approval, with the individual assuming the consequences.</p>
-                <p class="text-white/90">• Responsibility for maintaining and operating the equipment used, and for any
-                    physical or material damage resulting, whether during official competitions, activities, events,
-                    festivals, or other events inside or outside Egypt.</p>
-                <p class="text-white/90">• Responsibility for any violation of membership terms or misuse.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- For the Videos button -->
-
-
-    </div>
-    </div>
-    </div>
     </section>
     <!-- Footer Section -->
     <footer class="bg-[#205392] text-white py-6 px-4 md:px-8 lg:px-20">
-
+        
         <div class="container mx-auto px-2 md:px-4">
             <!-- White Line Divider -->
             <div class="w-full h-[4px] bg-white my-4 md:my-8"></div>
@@ -482,8 +449,7 @@
                 <!-- Navigation Links - Column 2 -->
                 <div class="flex flex-col space-y-4">
                     <a href="#" onclick="showNewsPopup(); return false;" class="block hover:text-gray-300">News</a>
-                    <a href="#" onclick="showRulesPopup(); return false;" class="block hover:text-gray-300">Rules &
-                        Regulations</a>
+                    <a href="#" onclick="showRulesPopup(); return false;" class="block hover:text-gray-300">Rules & Regulations</a>
                     <a href="#" class="block hover:text-gray-300">Terms & Conditions</a>
                     <a href="#" class="block hover:text-gray-300">Privacy Policy</a>
                     <a href="#" class="block hover:text-gray-300">Contact Us</a>
